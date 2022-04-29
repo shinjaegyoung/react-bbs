@@ -8,14 +8,15 @@ import Write from './routes/Write';
 import Navigation from './components/Navigation';
 
 import './App.css';
-//import AxiosTest from './AxiosTest';
+
+// import AxiosTest from './AxiosTest';
 
 function App() {
   return (
     <HashRouter>
       <Navigation />
       <Route path="/" exact={true} component={Home} />
-      <Route path="/detail" component={Detail} />
+      <Route path="/detail/:boardno" component={Detail} />
       <Route path="/write" component={Write} />
     </HashRouter>
     // <div className="App">
